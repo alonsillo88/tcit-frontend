@@ -18,10 +18,7 @@ const App = () => {
     <div className="container">
       <h1>Administrador de Publicaciones</h1>
 
-      <section className="section">
-        <h2>Crear nueva publicación</h2>
-        <PostForm />
-      </section>
+      
 
       <section className="section">
         <h2>Filtrar por nombre</h2>
@@ -31,6 +28,11 @@ const App = () => {
       <section className="section">
         <h2>Lista de publicaciones</h2>
         <PostList />
+      </section>
+
+      <section className="section">
+        <h2>Crear nueva publicación</h2>
+        <PostForm />
       </section>
     </div>
   );
