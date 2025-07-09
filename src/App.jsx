@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
+import { useDispatch } from 'react-redux';
+import { fetchPosts } from './redux/postsSlice';
 import PostForm from './components/PostForm';
 import PostFilter from './components/PostFilter';
 import PostList from './components/PostList';
 
 const App = () => {
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    dispatch(fetchPosts());
+  }, [dispatch]);
+
   return (
     <div className="container">
       <h1>Administrador de Publicaciones</h1>
