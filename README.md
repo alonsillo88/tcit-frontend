@@ -13,22 +13,6 @@ Tecnologías utilizadas
 
 Estructura del proyecto
 
-frontend/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── PostFilter.jsx
-│   │   ├── PostForm.jsx
-│   │   └── PostList.jsx
-│   ├── redux/
-│   │   ├── postsSlice.js
-│   │   └── store.js
-│   ├── App.jsx
-│   ├── index.css
-│   └── index.js
-├── package.json
-└── README.md
 
 Requisitos
 - Node.js >= 18.x
@@ -63,7 +47,6 @@ Consideraciones
 
 Este frontend consume los datos desde:
 http://localhost:3001/posts
-
 
 Autor
 Desarrollado por Alonso González
